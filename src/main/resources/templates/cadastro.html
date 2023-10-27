@@ -1,0 +1,210 @@
+
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <title>Sistema de Registro</title>
+
+</head>
+
+<link rel="stylesheet" href="css/registro.css">
+
+<body>
+
+  <h1>Cadastro de Usuário</h1>
+
+  <form id="registroForm">
+
+    <label for="email">Email:</label>
+
+    <input type="email" id="email" name="email" required><br>
+
+
+
+
+    <p><label for="senha">Senha:</label>
+
+    <input type="password" id="senha" name="senha" required><br></p>
+
+
+
+
+    <p><label for="confirmarSenha">Confirmar Senha:</label>
+
+    <input type="password" id="confirmarSenha" name="confirmarSenha" required><br></p>
+
+
+
+
+    <label for="nome">Nome:</label>
+
+    <input type="text" id="nome" name="nome" required><br>
+
+
+
+
+    <label for="logradouro">Logradouro:</label>
+
+    <input type="text" id="logradouro" name="logradouro"><br>
+
+
+
+
+    <label for="cep">CEP:</label>
+
+    <input type="text" id="cep" name="cep"><br>
+
+
+
+
+    <label for="bairro">Bairro:</label>
+
+    <input type="text" id="bairro" name="bairro"><br>
+
+
+
+
+    <label for="cidade">Cidade:</label>
+
+    <input type="text" id="cidade" name="cidade"><br>
+
+
+
+
+    <label for="uf">UF:</label>
+
+    <input type="text" id="uf" name="uf"><br>
+
+
+
+
+    <label for="dataNascimento">Data de Nascimento:</label>
+
+    <input type="date" id="dataNascimento" name="dataNascimento" required><br>
+
+
+
+
+
+    <button type="submit">Registrar</button>
+
+  </form>
+
+
+
+
+  <script>
+
+    document.getElementById("registroForm").addEventListener("submit", function(event) {
+
+      event.preventDefault();
+
+
+
+
+      const email = document.getElementById("email").value;
+
+      const senha = document.getElementById("senha").value;
+
+      const confirmarSenha = document.getElementById("confirmarSenha").value;
+
+      const nome = document.getElementById("nome").value;
+
+      const logradouro = document.getElementById("logradouro").value;
+
+      const cep = document.getElementById("cep").value;
+
+      const bairro = document.getElementById("bairro").value;
+
+      const cidade = document.getElementById("cidade").value;
+
+      const uf = document.getElementById("uf").value;
+
+      const dataNascimento = document.getElementById("dataNascimento").value;
+
+     
+
+      if (senha !== confirmarSenha) {
+
+        alert("A senha e a confirmação de senha não coincidem.");
+
+        return;
+
+      }
+
+
+
+
+      console.log("Email: " + email);
+
+      console.log("Nome: " + nome);
+
+      console.log("Logradouro: " + logradouro);
+
+      console.log("CEP: " + cep);
+
+      console.log("Bairro: " + bairro);
+
+      console.log("Cidade: " + cidade);
+
+      console.log("UF: " + uf);
+
+      console.log("Data de Nascimento: " + dataNascimento);
+
+    });
+
+  </script>
+
+</body>
+
+</html>
+
+
+
+<html>
+
+<head>
+
+  <title>Sistema de Registro</title>
+
+</head>
+
+<link rel="stylesheet" href="css/registro.css">
+
+<body>
+
+  <h1>Cadastro de Usuário</h1>
+
+  <form id="registroForm">
+
+   
+
+    <label for="email">Email:</label>
+
+    <input type="email" id="email" name="email" required><br>
+
+
+
+
+    <p><label for="senha">Senha:</label>
+
+    <input type="password" id="senha" name="senha" required><br></p>
+
+
+
+
+    <button type="submit">Entrar</button>
+
+    <p><a href="registro.html">Não possui uma conta</a></p>
+
+  </form>
+
+
+
+
+</body>
+
+</html>

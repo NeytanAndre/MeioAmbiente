@@ -1,4 +1,4 @@
-package com.itb.tcc.MeioAmbiente;
+package com.itb.tcc.reciclamais;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

@@ -1,0 +1,83 @@
+<html>
+
+<head>
+
+  <title>Login de Registro</title>
+   <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <h1>Cadastro de Usuário</h1>
+
+  <form id="registroForm" th:action="@{/meioAmbiente/usuario/login}"  th:object="${usuario}" method="post">
+ 
+    <label for="email">Email:</label>
+
+    <input type="email" id="email" th:field="*{email}" required><br>
+
+ 
+
+ 
+    <label for="dataNascimento">Senha:</label>
+
+    <input type="password" id="senha" th:field="*{senha}" required><br>
+ 
+
+
+
+<input type = "submit" value="Login">
+  </form>
+
+ 
+
+  <script>
+
+  /*  document.getElementById("registroForm").addEventListener("submit", function(event) {
+
+      event.preventDefault(); // Evita o envio do formulário padrão
+
+      
+
+      // Obtenha os valores dos campos
+
+
+      const email = document.getElementById("email").value;
+
+      const logradouro = document.getElementById("senha").value;
+
+      
+
+       //Você pode agora enviar esses dados para um servidor para processamento
+
+      // Ou realizar alguma outra ação com eles
+
+      
+
+      // Exemplo: exibindo os valores no console
+
+      console.log("Nome: " + nome);
+
+      console.log("Email: " + email);
+
+      console.log("Logradouro: " + logradouro);
+
+      console.log("CEP: " + cep);
+
+      console.log("Bairro: " + bairro);
+
+      console.log("Cidade: " + cidade);
+
+      console.log("UF: " + uf);
+
+      console.log("Data de Nascimento: " + dataNascimento);
+
+      console.log("Status de Usuário: " + statusUsuario);
+
+    });
+*/
+  </script>
+
+</body>
+
+</html>

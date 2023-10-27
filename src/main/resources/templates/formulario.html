@@ -1,0 +1,138 @@
+<html>
+
+<head>
+
+  <title>Sistema de Registro</title>
+   <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <h1>Cadastro de Usuário</h1>
+
+ <form id="registroForm" th:action="@{/meioAmbiente/usuario/add-usuario}"  th:object="${usuario}" method="post">
+
+    <label for="nome">Nome:</label>
+
+    <input type="text" id="nome" th:field="*{nome}" required><br>
+
+
+ 
+
+    <label for="email">Email:</label>
+
+    <input type="email" id="email" th:field="*{email}" required><br>
+
+ <label for="email">Senha:</label>
+
+    <input type="password" id="senha" th:field="*{senha}" required><br>
+
+
+    <label for="logradouro">Logradouro:</label>
+
+    <input type="text" id="logradouro" th:field="*{logradouro}"><br>
+
+ 
+
+    <label for="cep">CEP:</label>
+
+    <input type="text" id="cep" th:field="*{cep}"><br>
+
+ 
+
+    <label for="bairro">Bairro:</label>
+
+    <input type="text" id="bairro" th:field="*{bairro}"><br>
+
+ 
+
+    <label for="cidade">Cidade:</label>
+
+    <input type="text" id="cidade" th:field="*{cidade}"><br>
+
+ 
+
+    <label for="uf">UF:</label>
+
+    <input type="text" id="uf" th:field="*{uf}"><br>
+
+ 
+
+    <label for="dataNascimento">Data de Nascimento:</label>
+
+    <input type="date" id="dataNascimento" th:field="*{dataNascimento}" required><br>
+
+ 
+
+
+ 
+
+<input type="submit" value="cadastrar">
+
+  </form>
+
+ 
+
+  <script>
+
+   /* document.getElementById("registroForm").addEventListener("submit", function(event) {
+
+      event.preventDefault(); // Evita o envio do formulário padrão
+
+      
+
+      // Obtenha os valores dos campos
+
+      const nome = document.getElementById("nome").value;
+
+      const email = document.getElementById("email").value;
+
+      const logradouro = document.getElementById("logradouro").value;
+
+      const cep = document.getElementById("cep").value;
+
+      const bairro = document.getElementById("bairro").value;
+
+      const cidade = document.getElementById("cidade").value;
+
+      const uf = document.getElementById("uf").value;
+
+      const dataNascimento = document.getElementById("dataNascimento").value;
+
+      const statusUsuario = document.getElementById("statusUsuario").value;
+
+      
+
+      // Você pode agora enviar esses dados para um servidor para processamento
+
+      // Ou realizar alguma outra ação com eles
+
+      
+
+      // Exemplo: exibindo os valores no console
+
+      console.log("Nome: " + nome);
+
+      console.log("Email: " + email);
+
+      console.log("Logradouro: " + logradouro);
+
+      console.log("CEP: " + cep);
+
+      console.log("Bairro: " + bairro);
+
+      console.log("Cidade: " + cidade);
+
+      console.log("UF: " + uf);
+
+      console.log("Data de Nascimento: " + dataNascimento);
+
+      console.log("Status de Usuário: " + statusUsuario);
+
+    });
+*/
+  </script>
+
+</body>
+
+</html>
